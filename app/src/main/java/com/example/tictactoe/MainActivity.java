@@ -260,10 +260,14 @@ public class MainActivity extends AppCompatActivity {
 
                 // set cell icon
                 if (player1) {
-                    ((ImageView) v).setImageResource(R.drawable.player1);
+                    ((ImageView) v).setImageResource(R.drawable.angry_fu);
+                    ((ImageView) v).setScaleType(ImageView.ScaleType.FIT_CENTER);
+                    ((ImageView) v).setPadding(0,50,0,50);
                     cells_values[Integer.valueOf(v.getTag().toString())] = 1;
                 } else {
-                    ((ImageView) v).setImageResource(R.drawable.player2);
+                    ((ImageView) v).setImageResource(R.drawable.babyhead);
+                    ((ImageView) v).setPadding(0,50,0,50);
+                    ((ImageView) v).setScaleType(ImageView.ScaleType.FIT_CENTER);
                     cells_values[Integer.valueOf(v.getTag().toString())] = 2;
                 }
                 player1 = !player1;
