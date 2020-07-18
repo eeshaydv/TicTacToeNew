@@ -260,10 +260,10 @@ public class MainActivity extends AppCompatActivity {
 
                 // set cell icon
                 if (player1) {
-                    ((ImageView) v).setImageResource(R.drawable.player1);
+                    ((ImageView) v).setImageResource(R.drawable.next);
                     cells_values[Integer.valueOf(v.getTag().toString())] = 1;
                 } else {
-                    ((ImageView) v).setImageResource(R.drawable.player2);
+                    ((ImageView) v).setImageResource(R.drawable.cross);
                     cells_values[Integer.valueOf(v.getTag().toString())] = 2;
                 }
                 player1 = !player1;
